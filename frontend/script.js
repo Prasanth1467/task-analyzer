@@ -1,10 +1,9 @@
 // Task Analyzer Frontend JavaScript
 
-// Use environment variable if available (for production), otherwise use localhost (for development)
-// This will be set by the script tag in index.html or fallback to localhost
+// API Base URL - Set by script tag in index.html or fallback to Render backend
 const API_BASE_URL = (typeof window !== 'undefined' && window.API_BASE_URL) 
     ? window.API_BASE_URL 
-    : 'http://localhost:8000/api';
+    : 'https://task-analyzer-backend-gx1y.onrender.com/api';
 
 // State management
 let tasks = [];
